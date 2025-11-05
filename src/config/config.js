@@ -6,14 +6,14 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 module.exports= {
   development: {
-    username: postgres, // change this as per your local setup
+    username: "postgres", // change this as per your local setup
     password: "" ,
     database: "Flights",
     host: "127.0.0.1",
     dialect: 'postgres'
   },
   test: {
-    username: postgres, // change this as per your local setup
+    username: "postgres", // change this as per your local setup
     password: "" ,
     database: "Flights",
     host: "127.0.0.1",
