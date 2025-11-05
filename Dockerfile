@@ -6,7 +6,9 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+COPY entrypoint.sh .
+RUN chmod +x ./entrypoint.sh
 
 EXPOSE 6001
-CMD ["sh", "-c", "npm run start"]
+CMD ["./entrypoint.sh"]
 
